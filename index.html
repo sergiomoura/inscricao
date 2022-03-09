@@ -11,29 +11,103 @@
             width: 400px;
             min-height: 300px;
             margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <main>
         <!-- o nome -->
-    
+        <label>
+            Nome:
+            <input type="text" placeholder="Digite o seu nome" required>
+        </label>
+        
+        <!-- email -->
+        <label>
+            Email: 
+            <input
+                type="email"
+                placeholder="Digite o seu e-mail"
+                id="email" />
+        </label>
+
         <!-- senha -->
-        
+        <label>
+            Senha: 
+            <input
+                type="password"
+                placeholder="Digite uma senha"
+                id="senha" />
+        </label>
+
         <!-- confirmação de senha -->
-    
+        <label>
+            Confirmação de Senha: 
+            <input
+                type="password"
+                placeholder="Confirme a sua senha"
+                id="confirmacao" />
+        </label>
+
         <!-- data de nascimento -->
-    
+        <label>
+            Data de Nascimento: 
+            <input
+                type="date"
+                id="data-nascimento" />
+        </label>        
+
         <!-- estado -->
-    
+        <label>
+            Estado:
+            <select>
+                <option disabled selected>Escolha um estado</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </label>
+
         <!-- cidade -->
-    
+        <!-- Pular... -->
+
+        <!-- Número de filhos -->
+        <label>
+            Número de filhos:
+            <input type="number" value="1" min="0" step="1" max="20">
+        </label>
+
         <!-- Meio de contato preferido: Telefone, whatsapp, SMS ou email -->
-    
+        <fieldset>
+            <legend>Meios de contato</legend>
+            <label><input name="meioDeContato" type="radio">Whatsapp</label>
+            <label><input name="meioDeContato" type="radio">Telefone</label>
+            <label><input name="meioDeContato" type="radio">SMS</label>
+            <label><input name="meioDeContato" type="radio">E-mail</label>
+        </fieldset>
+
         <!-- Disponibilidade: Manhã, tarde, noite -->
-        
+        <!-- type="checkbox"-->
+
         <!-- Upload de imagem -->
+        <!-- type="file"-->
+        
     </main>
-    
-</body>
+    </body>
 </html>
